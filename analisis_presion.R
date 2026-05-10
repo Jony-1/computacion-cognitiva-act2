@@ -62,22 +62,22 @@ resumen_genero <- df %>%
 cat("\nResumen por género:\n"); print(resumen_genero)
 
 # ── Paleta de colores ──────────────────────────────────────
-pal_cat <- c("Normal"                = "#3A3A3A",
-             "Elevada"               = "#777777",
-             "Hipertensión Etapa 1"  = "#555555",
-             "Hipertensión Etapa 2"  = "#AAAAAA")
-pal_gen <- c("Femenino" = "#2C2C2C", "Masculino" = "#888888")
+pal_cat <- c("Normal"                = "#3BB273",
+             "Elevada"               = "#F4A261",
+             "Hipertensión Etapa 1"  = "#8338EC",
+             "Hipertensión Etapa 2"  = "#E84855")
+pal_gen <- c("Femenino" = "#3BB273", "Masculino" = "#D95F02")
 
 # ── 3. Gráficas ───────────────────────────────────────────
 
 # --- G1: Histograma Presión Sistólica ---
 cat("Generando G1...\n")
 g1 <- ggplot(df, aes(x = systolic_pressure)) +
-  geom_histogram(bins = 40, fill = "#2C2C2C", color = "white", alpha = 0.85) +
+  geom_histogram(bins = 40, fill = "#1B6B40", color = "white", alpha = 0.85) +
   geom_vline(aes(xintercept = mean(systolic_pressure), linetype = "Media"),
              color = "black", linewidth = 0.9) +
   geom_vline(aes(xintercept = median(systolic_pressure), linetype = "Mediana"),
-             color = "#666666", linewidth = 0.9) +
+             color = "#E84855", linewidth = 0.9) +
   scale_linetype_manual(name = "Estadístico",
     values = c("Media" = "dashed", "Mediana" = "dotted")) +
   labs(title = "Distribución de la Presión Sistólica",
@@ -92,11 +92,11 @@ ggsave(file.path(IMG_DIR, "g1_sistolica.png"), g1,
 # --- G2: Histograma Presión Diastólica ---
 cat("Generando G2...\n")
 g2 <- ggplot(df, aes(x = diastolic_pressure)) +
-  geom_histogram(bins = 40, fill = "#444444", color = "white", alpha = 0.85) +
+  geom_histogram(bins = 40, fill = "#A0522D", color = "white", alpha = 0.85) +
   geom_vline(aes(xintercept = mean(diastolic_pressure), linetype = "Media"),
              color = "black", linewidth = 0.9) +
   geom_vline(aes(xintercept = median(diastolic_pressure), linetype = "Mediana"),
-             color = "#888888", linewidth = 0.9) +
+             color = "#1B6B40", linewidth = 0.9) +
   scale_linetype_manual(name = "Estadístico",
     values = c("Media" = "dashed", "Mediana" = "dotted")) +
   labs(title = "Distribución de la Presión Diastólica",
@@ -194,8 +194,8 @@ g6 <- ggplot(dept_stats,
              aes(x = reorder(department_name, presion_media),
                  y = presion_media, fill = tipo)) +
   geom_col(position = "dodge", alpha = 0.88) +
-  scale_fill_manual(values = c("Sistólica media" = "#2C2C2C",
-                                "Diastólica media" = "#888888"),
+  scale_fill_manual(values = c("Sistólica media" = "#1B6B40",
+                                "Diastólica media" = "#F4A261"),
                     name = "") +
   coord_flip() +
   labs(title = "Presión Arterial Media – Top 15 Departamentos",
