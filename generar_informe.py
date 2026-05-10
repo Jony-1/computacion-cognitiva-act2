@@ -88,10 +88,11 @@ parrafo(doc, (
 ))
 parrafo(doc, (
     f"El archivo actividad2.csv tiene {n_total:,} filas, cada una un paciente diferente "
-    f"de {n_dept} departamentos colombianos. Los campos disponibles son: nombre, género, "
-    "ciudad, departamento, presión sistólica, presión diastólica, tipo de medicamento "
-    "y dosis prescrita. Con eso alcanza para mirar si la presión cambia según el "
-    "género, la región o el tratamiento."
+    f"de {n_dept} departamentos colombianos. Las columnas son: first_name, last_name, "
+    "gender, city_name, department_name, id_branch (sede), medicine_type, "
+    "medicine_quantity (cantidad prescrita) y las dos variables de interés: "
+    "systolic_pressure y diastolic_pressure en mmHg. Con eso alcanza para analizar "
+    "si la presión varía según género, región o tratamiento asignado."
 ))
 parrafo(doc, (
     "El trabajo se hizo en RStudio con R y ggplot2, siguiendo la guía de la actividad. "
