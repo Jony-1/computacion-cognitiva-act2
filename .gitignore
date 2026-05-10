@@ -1,0 +1,15 @@
+# Entorno Python local
+Lib/
+Scripts/
+share/
+__pycache__/
+*.pyc
+
+# Carpeta interna de Claude
+.claude/
+
+# Documento Word generado (se regenera con generar_informe.py)
+*.docx
+
+# Gráficas generadas por Python (las de R sí van)
+graficas/
