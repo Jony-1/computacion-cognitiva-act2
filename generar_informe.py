@@ -148,7 +148,7 @@ summary(df$diastolic_pressure)""")
 
 parrafo(doc, (
     "El código fuente completo del análisis en R está disponible en el repositorio: "
-    "https://github.com/[usuario]/computacion-cognitiva-act2 "
+    "https://github.com/Jony-1/computacion-cognitiva-act2 "
     "— ahí se puede ver el script analisis_presion.R con todos los pasos de limpieza, "
     "clasificación y generación de gráficas."
 ), tamaño=10, cursiva=True)
