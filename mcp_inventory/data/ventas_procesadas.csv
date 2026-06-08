@@ -1,0 +1,9 @@
+producto_id,nombre,total_unidades,total_ingresos,semanas_activas,promedio_semanal
+6,Cable HDMI 2m,122,4270000.0,13,9.38
+8,Webcam Full HD,132,36960000.0,12,11.0
+1,Laptop HP 14,115,270250000.0,13,8.85
+2,Monitor Samsung 24,135,162000000.0,13,10.38
+5,Mouse Inalambrico,149,22350000.0,13,11.46
+7,Disco SSD 500GB,132,59400000.0,13,10.15
+4,Teclado Mecanico,102,32640000.0,13,7.85
+3,Silla Ergonomica,137,116450000.0,10,13.7

@@ -1,0 +1,9 @@
+producto_id,nombre,demanda_estimada,error_mae
+1,Laptop HP 14,4.5,3.55
+2,Monitor Samsung 24,7.0,3.97
+3,Silla Ergonomica,19.7,4.27
+4,Teclado Mecanico,10.7,4.09
+5,Mouse Inalambrico,12.3,3.81
+6,Cable HDMI 2m,11.9,3.35
+7,Disco SSD 500GB,10.8,3.78
+8,Webcam Full HD,5.6,3.8
